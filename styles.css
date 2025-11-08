@@ -9,7 +9,7 @@ body {
 }
 
 button{
-  border: none; /* 移除按鈕的邊框 */
+  border: none;
   border-radius: 15%;
   width: 50px;
   height: 40px;
@@ -17,7 +17,7 @@ button{
 
 h1{
   text-align: center;
-  margin-bottom: 20px; /* 新增底部外邊距 */
+  margin-bottom: 20px;
 }
 #converterPage {
   font-family: 'Roboto' , sans-serif;
@@ -29,9 +29,9 @@ h1{
   width: 1280PX;
   overflow: hidden;
   position: relative;
-  top: 0; /* 貼齊頂部 */
+  top: 0; 
   display: none;
-  border: none; /* 移除下拉式選單的邊框 */
+  border: none; 
 }
 
 #fromCurrency{
@@ -49,10 +49,10 @@ h1{
 .converter {
   text-align: center;
   margin-bottom: 20px;
-  display: flex; /* 使用 Flexbox 版面配置 */
-  align-items: center; /* 垂直居中對齊 */
-  justify-content: center; /* 水平居中對齊 */
-  text-align: center; /* 文字水平居中對齊 */
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
 }
 
 input, select, button {
@@ -60,10 +60,10 @@ input, select, button {
 }
 
 #amount{
-  border-radius: 10px; /* 設定圓角 */
+  border-radius: 10px; 
   padding: 15px;
-  outline: none; /* 移除點擊時的預設邊框 */
-  border: none; /* 移除按鈕的邊框 */
+  outline: none; 
+  border: none; 
 }
 
 #result{
