@@ -1,5 +1,3 @@
-// script.js
-
 const fromCurrencySelect = document.getElementById("fromCurrency");
 const toCurrencySelect = document.getElementById("toCurrency");
 
@@ -27,18 +25,16 @@ async function fetchCurrencyRates() {
   try {
     const response = await fetch("https://open.er-api.com/v6/latest/USD");
     const data = await response.json();
-    rates = data.rates; // 將汇率信息存储到全局变量中
+    rates = data.rates; 
     
-    // 清除现有选项
     fromCurrencySelect.innerHTML = "";
     toCurrencySelect.innerHTML = "";
 
-    // 填充选择选项
     for (const currency in rates) {
       if (currency in currencyNames) {
         const option = document.createElement("option");
         option.value = currency;
-        option.textContent = `${currency} (${currencyNames[currency]})`; // 在每个货币后面加上中文国家名
+        option.textContent = `${currency} (${currencyNames[currency]})`;
         fromCurrencySelect.appendChild(option.cloneNode(true));
         toCurrencySelect.appendChild(option);
       }
@@ -89,5 +85,3 @@ function exchangeCurrencies() {
 
 // 頁面載入時取得貨幣匯率
 window.onload = fetchCurrencyRates;
-
-// --asar
